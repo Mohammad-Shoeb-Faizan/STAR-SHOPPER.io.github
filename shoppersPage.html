@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>STAR SHOPPER</title>
+  </head>
+  <body class="overflow-hidden">
+    
+    <!-- This the shoppers PORTAL after Login -->
+    <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <a href="#" class="flex items-center px-0">
+                <img src="./assets/capstone/icons8-circled-menu-30.png" class="mr-3 h-6 sm:h-9" alt="" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">STAR SHOPPER</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <a href="#" class="inline-block px-6 py-2 border-2 border-gray-200 text-gray-200 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" id="logoutButton">Logout</a>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    
+                    <li>
+                        <a href="./cart.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"><img class="h-10" src="./assets/capstone/icons8-shopping-cart-64.png" alt="">Cart</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"><img class="h-10" src="./assets/capstone/icons8-male-user-50.png" alt="">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+      <div class="mainLeft">
+        <h3 class="heading heading1">SHOP WITH UTMOST</h3>
+        <h4 id="dynamicHeading" class="dynamicHeading">Confidence</h4>
+        <p class="pMainLeft">Shop from the latest trendy <br> clothes to the best gadgets. <br> With Star Shopper, you save 10% every <br> time you shop!</p>
+        <a href="/productsPage.html"><button type="button" class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out browseProducts">Browse Products</button></a>
+        <h3 class="heading heading2">Products available from:</h3>
+        <div class="products">
+          <img class="img" src="./assets/grocerylogo.png" alt="" >
+          <img class="img" src="./assets/baglogo.png" alt="">
+          <img class="img" src="./assets/elctronicslogo.png" alt="">
+          <img class="img" src="./assets/shirtslogo.png" alt="">
+          <img class="img" src="./assets/pantslogo.png" alt="">
+        </div>
+      </div>
+      <div class="mainRight">
+        <img class="background" src="./assets/capstone/background.jpg">
+            <img class="foreground" src="./assets/capstone/shoping_girl-removebg-preview.png" alt="" data-heading="Black Eagle">
+      </div>
+      <div id="left-arrow" class="arrow left-arrow">&lt;</div>
+      <div id="right-arrow" class="arrow right-arrow">&gt;</div>
+    </main>
+    <script type="module" src="/shoppersPage.js"></script>
+  </body>
+</html>

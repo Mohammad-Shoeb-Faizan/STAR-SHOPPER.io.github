@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sellersPage.css" />
+
+    <title>STAR SHOPPER</title>
+  </head>
+  <body>
+    <!-- Header of the page  -->
+    <header>
+      <!-- NAV BAR  -->
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <!-- MENU OPTION  -->
+          <a href="#" class="flex items-center px-0">
+            <img
+              src="./assets/capstone/icons8-circled-menu-30.png"
+              class="mr-3 h-6 sm:h-9"
+              alt=""
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >STAR SHOPPER</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <!-- LOGOUT BUTTON  -->
+            <a
+              href="#"
+              class="inline-block px-6 py-2 border-2 border-gray-200 text-gray-200 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              id="logoutButton"
+              >Logout</a
+            >
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <!-- PROFILE ICON  -->
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img
+                    class="h-10"
+                    src="./assets/capstone/icons8-male-user-50.png"
+                    alt=""
+                  />Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="flex">
+      <!-- left side of the page  -->
+      <div class="leftside">
+        <!-- Algolia search bar  -->
+        <div class="searchbar" id="searchInput">
+          <input
+            type="text"
+            placeholder="Search for items"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Search for items'"
+          />
+        </div>
+        <!-- Left div which is scrollable  -->
+        <div class="leftscroll">
+          <div id="chartContainer" style="height: 370px; width: 100%"></div>
+
+
+<!-- Loading bar -->
+<div class="container">
+              <h1>This Months Goal: </h1>
+              <br>
+            <input
+              type="radio"
+              class="radio"
+              name="progress"
+              value="five"
+              id="five"
+            />
+            <label for="five" class="label">Grocery</label>
+
+            <input
+              type="radio"
+              class="radio"
+              name="progress"
+              value="twentyfive"
+              id="twentyfive"
+              checked
+            />
+            <label for="twentyfive" class="label">Bag</label>
+
+            <input
+              type="radio"
+              class="radio"
+              name="progress"
+              value="fifty"
+              id="fifty"
+            />
+            <label for="fifty" class="label">Clothes</label>
+
+            <input
+              type="radio"
+              class="radio"
+              name="progress"
+              value="seventyfive"
+              id="seventyfive"
+            />
+            <label for="seventyfive" class="label">Electronics</label>
+
+            <input
+              type="radio"
+              class="radio"
+              name="progress"
+              value="onehundred"
+              id="onehundred"
+            />
+            <label for="onehundred" class="label">Office-Suplies</label>
+
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+
+          <!-- Go to add new product button  -->
+          <div class="addNewProduct"><button>ADD NEW PRODUCT</button></div>
+        </div>
+      </div>
+      <!-- right side of the page  -->
+      <div class="rightside">
+        <div class="heading">
+          <h1><i> YOUR PRODUCTS : </i></h1>
+        </div>
+        <div class="productItems results"></div>
+        <h3 class="fotter">SEARCH FOR MORE PRODUCTS</h3>
+      </div>
+    </section>
+    <!-- Include the Algolia JavaScript library -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4"></script>
+    <!-- Include canvas Script for bar chart  -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="module" src="/sellersPage.js"></script>
+  </body>
+</html>

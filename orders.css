@@ -1,0 +1,57 @@
+body {
+    overflow: hidden;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  .scrollable {
+    height: 77vh;
+    overflow: auto;
+    padding:0.5rem;
+  }
+  
+  .scrollable::-webkit-scrollbar {
+    width: 0;
+  }
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+.ordersList{
+    background: rgb(165, 207, 224);
+    height: 400px;
+    width: 90vw;
+    border: none;
+    border-radius: 10px;
+    margin: 1rem 0 1rem 1rem;
+    display: flex;
+    
+  position: relative;
+}
+
+.totalPrice{
+   /* margin-left: auto; */
+   position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+h1{
+    margin: 3rem 3rem 0 3rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.result{
+  margin: 1rem 3rem 1rem 1rem;
+  width:150px;
+  text-align: center;
+}
+
+.imageElement{
+  height: 200px;
+  width: 150px;
+}

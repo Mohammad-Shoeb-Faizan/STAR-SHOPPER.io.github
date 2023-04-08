@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="productsPage.css" />
+
+    <title>STAR SHOPPER</title>
+  </head>
+  <body>
+    <!-- Header of the page  -->
+    <header>
+      <!-- NAV BAR  -->
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <!-- MENU OPTION  -->
+          <a href="#" class="flex items-center px-0">
+            <img
+              src="./assets/capstone/icons8-circled-menu-30.png"
+              class="mr-3 h-6 sm:h-9"
+              alt=""
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >STAR SHOPPER</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <!-- LOGOUT BUTTON  -->
+            <a
+              href="#"
+              class="inline-block px-6 py-2 border-2 border-gray-200 text-gray-200 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              id="logoutButton"
+              >Logout</a
+            >
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <!-- CART ICON  -->
+              <li>
+                <a
+                  href="./cart.html"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img
+                    class="h-10"
+                    src="./assets/capstone/icons8-shopping-cart-64.png"
+                    alt=""
+                  />Cart</a
+                >
+              </li>
+              <!-- PROFILE ICON  -->
+              <li>
+                <a
+                  href="./shoppersPage.html"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  ><img
+                    class="h-10"
+                    src="./assets/capstone/icons8-male-user-50.png"
+                    alt=""
+                  />Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="flex">
+      <!-- left side of the page  -->
+      <div class="leftside">
+        <!-- Algolia search bar  -->
+        <div class="searchbar" id="searchInput">
+          <input
+            type="text"
+            placeholder="Search for items"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Search for items'"
+          />
+        </div>
+        <!-- Left div which is scrollable  -->
+        <div class="leftscroll">
+          <!-- div of price range selector  -->
+          <div class="priceTag">
+            <!-- low price selector -->
+            <div class="priceLessThan p-3 flex">Price Less Than :</div>
+            <input
+              type="number"
+              maxlength="7"
+              id="minPriceInput"
+              class="text-center"
+              placeholder="----------------"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='----------------'"
+            />
+            <!-- higher price selector  -->
+            <div class="priceMoreThan p-3 flex">Price More Than :</div>
+            <input
+              type="number"
+              maxlength="7"
+              id="maxPriceInput"
+              class="text-center"
+              placeholder="----------------"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='----------------'"
+            />
+          </div>
+          <!-- Sorting menu  -->
+          <div class="pulldownMenu p-3">
+            <!-- label  -->
+            <label>Sort By :</label> <br />
+            <br />
+            <!-- menu  -->
+            <select class="pulldown">
+              <!-- default value  -->
+              <option value="selectItem">Select Item</option>
+              <!-- selection values -->
+              <option value="price">Price</option>
+              <option value="discount">Discount</option>
+              <option value="a-z">A - Z</option>
+              <option value="z-a">Z - A</option>
+            </select>
+          </div>
+          <!-- Category buttons  -->
+          <div class="category">
+            <button
+              id="grocery"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Grocery
+            </button>
+            <button
+              id="bags"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Bags
+            </button>
+            <button
+              id="electronics"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Electronics
+            </button>
+            <button
+              id="shirts"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Shirts
+            </button>
+            <button
+              id="pants"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Pants
+            </button>
+            <button
+              id="officesupplies"
+              type="button"
+              class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Office Supplies
+            </button>
+          </div>
+          <!-- Go to cart button  -->
+          <div class="goToCart"><button>GO TO CART</button></div>
+        </div>
+      </div>
+      <!-- right side of the page  -->
+      <div class="rightside">
+        <div class="heading">
+          <h1><i> SELECT A PRODUCT AND ADD TO CART </i></h1>
+        </div>
+        <div class="productItems results"></div>
+      </div>
+    </section>
+    <!-- Include the Algolia JavaScript library -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4"></script>
+    <script type="module" src="/productsPage.js"></script>
+  </body>
+</html>

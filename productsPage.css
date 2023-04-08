@@ -1,0 +1,181 @@
+body {
+  overflow: hidden;
+}
+header {
+  height: 10vh;
+}
+
+.leftside {
+  width: 20vw;
+  height: 90vh;
+  margin-top: 0.3rem;
+  border-right: black 1px solid;
+}
+
+.rightside {
+  width: 80vw;
+  height: 90vh;
+}
+
+.goToCart {
+  position: absolute;
+  bottom: 0;
+}
+
+.goToCart button {
+  background: linear-gradient(to right, #c4d873, #2d14f6);
+  font-size: 1.5rem;
+  color: #ecf2ff;
+  margin: 1.5rem;
+  margin-left: 1.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+}
+
+.searchbar {
+  padding: 0;
+  margin-bottom: 1rem;
+  border-bottom: black 1px solid;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar input[type="text"] {
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+  width: 90%;
+  background: #e3f2fd;
+  text-align: center;
+}
+
+.priceTag {
+  margin-bottom: 2.5rem;
+}
+
+.pulldown {
+  background: #e3f2fd;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  width: 90%;
+  text-align: center;
+}
+
+.category {
+  margin: 1rem;
+  margin-top: 8rem;
+}
+
+.category button {
+  margin: 1rem;
+  padding: 0.5rem 1.7rem;
+  border-radius: 30px;
+}
+
+.leftscroll {
+  height: 65vh;
+  overflow: auto;
+}
+
+.leftscroll::-webkit-scrollbar {
+  width: 0;
+}
+.leftscroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.heading {
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.productItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+  height: 75vh;
+  overflow: auto;
+}
+
+.productItems::-webkit-scrollbar {
+  width: 0;
+}
+.productItems::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.productItems .result {
+  margin: 1rem;
+  text-align: center;
+  height: 450px;
+}
+
+.resultImage {
+  height: 240px;
+  width: 300px;
+}
+
+/* CSS */
+.purchaseButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.purchaseButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.purchaseButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.purchaseButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}

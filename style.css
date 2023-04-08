@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.one{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.one .left{
+    background-color: #e3f2fd;
+    height: 100vh;
+    justify-content: center;
+}
+
+.one .left img{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.one .left button{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.one .right{
+    background-color: #1565c0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.one .right img{
+    position: absolute;
+    top: 20%;
+    left: 55%
+}
+
+.one .right button{
+    position: absolute;
+    top: 80%;
+    left: 68%;
+    font-size: 1.3rem;
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.two .left{
+    background-color: #e3f2fd;
+    height: 100vh;
+    justify-content: center;
+}
+
+.two .left img{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.two .left button{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.two .right{
+    background-color: #1565c0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.two .right form{
+    padding: 3rem;
+    border-radius: 30px;
+    background: #e3f2fd;
+    position: absolute;
+    top: 26%;
+    left: 55%;
+    font-size: 1.2rem;
+}
+
+.two .right form input{
+    margin: 1rem;
+    border-radius: 30px;
+    padding:10px;
+}
+
+.two .right form button{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.two .right form #createAccountButton{
+    font-size: 0.8rem;
+}
+
+#createAccountPopup{
+    display: none;
+}
+
+.two .right form #existingAccountButton{
+    font-size: 0.8rem;
+}
+
+.three{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.three .left{
+    background-color: #e3f2fd;
+    height: 100vh;
+    justify-content: center;
+}
+
+.three .left img{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.three .left button{
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.three .right{
+    background-color: #1565c0;
+    height: 100vh;
+    justify-content: center;
+}
+
+.three .right form{
+    padding: 3rem;
+    border-radius: 30px;
+    background: #e3f2fd;
+    position: absolute;
+    top: 26%;
+    left: 55%;
+    font-size: 1.2rem;
+}
+
+.three .right form input{
+    margin: 1rem;
+    border-radius: 30px;
+    padding:10px;
+}
+
+.three .right form button{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.three .right form #createAccountButton{
+    font-size: 0.8rem;
+}
+
+#createAccountPopup{
+    display: none;
+}
+
+.three .right form #existingAccountButton{
+    font-size: 0.8rem;
+}
+
+header{
+    height: 10vh;
+}
+
+.mainLeft {
+    float: left;
+    width: 50%;
+    height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.mainRight {
+    float: right;
+    width: 50%;
+    height: 90vh;
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5a5a9b;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.left-arrow {
+    left: 20px;
+}
+.right-arrow {
+    right: 20px;
+}
+.heading {
+    margin-top: 0;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: absolute;
+    top: 77%;
+    left: 9%;
+}
+.img {
+    max-width: 100px;
+    max-height: 100px;    
+    margin-right: 2.2rem;
+    margin-bottom: 10px;
+    aspect-ratio:1/1;
+}
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 713px;
+    width: 1024px;
+    z-index: -1;
+}
+.foreground {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.heading1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 2rem;
+}
+
+.dynamicHeading{
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    font-size: 4rem;
+    color: #06aae4;
+}
+
+.pMainLeft{
+    position: absolute;
+    top: 37%;
+    left: 9%;
+    font-size: 1.5rem;
+}
+
+.browseProducts{
+    position: absolute;
+    top: 65%;
+    left: 9%;
+    font-size: 1.5rem;
+}
+
+.heading2{
+    position: absolute;
+    top: 73%;
+    left: 9%;
+    font-size: 1.2rem;
+}

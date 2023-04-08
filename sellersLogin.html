@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>STAR SHOPPER</title>
+  </head>
+  <body>
+    <!-- This the shoppers Login page -->
+    <div id="app" class="two">
+      <!-- Left side of sellers Login page -->
+      <div class="left">
+        <img src="./assets/shop.png" alt="" />
+        <!-- This button takes to the shoppers Login Page  -->
+        <a href="./shoppersLogin.html"><button
+          class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+        >
+          GO TO SHOPPERS LOGIN
+        </button></a>
+      </div>
+      <!-- Right side of sellers Login page -->
+      <div class="right">
+        <!-- Login Form -->
+        <form id="login" >
+          <h4>
+            Login and start shopping your favourite <br />
+            Refer a friend and save 50% OFF
+          </h4>
+          <input name="email" class="login email" type="email" placeholder="Login Email" /><br />
+          <input name="password" class="login password" type="password" placeholder="Password" /><br />
+          <!-- Login Button  -->
+          <button id="loginButton"
+            class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+          >
+            SELLERS LOGIN
+          </button>
+          <!-- Create Account Button  -->
+          <p>
+            Don't have an Account
+            <button
+              type="button"
+              id="createAccountButton"
+              class="inline-block px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+            >
+              Create Account
+            </button>
+          </p>
+        </form>
+
+        <!-- Create Account form  -->
+        <form id="createAccountPopup" >
+          <h4>
+            Login and start shopping your favourite <br />
+            Refer a friend and save 50% OFF
+          </h4>
+          <input id="email" class="login" type="email" placeholder="Login Email" name="email"/><br />
+          <input id="password" class="login" type="password" placeholder="Password" name="password" /><br />
+          <input id="confirmpassword"
+            class="login"
+            type="password"
+            placeholder="Confirm Password "
+          /><br />
+          <button
+            class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"
+          >
+            CREATE Account
+          </button>
+          <!-- Go to Existing Account Button  -->
+          <p>
+            Already have an Account
+            <button
+              type="button"
+              id="existingAccountButton"
+              class="inline-block px-6 py-2 border-2 border-yellow-500 text-yellow-500 font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+            >
+              Login Existing Account
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/sellersLogin.js"></script>
+  </body>
+</html>
